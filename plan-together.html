@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Plan Together — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="plan">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <small>FRIENDS MAKE THE BEST PLANS</small>
+        <h1>
+          Build a weekend
+          <br>
+          everyone’s into.
+        </h1>
+        <p>
+          Choose a city, budget, and vibe. Shortlist events and vote on your favorites.
+        </p>
+      </section>
+      <div class="plan-layout">
+        <section>
+          <div class="filters">
+            <label>
+              City
+              <select id="planCity">
+                <option value="">
+                  Any city
+                </option>
+                <option>
+                  Chennai
+                </option>
+                <option>
+                  Bengaluru
+                </option>
+                <option>
+                  Mumbai
+                </option>
+                <option>
+                  Online
+                </option>
+              </select>
+            </label>
+            <label>
+              Vibe
+              <select id="planCategory">
+                <option value="">
+                  Any vibe
+                </option>
+                <option>
+                  Technology
+                </option>
+                <option>
+                  Music
+                </option>
+                <option>
+                  Business
+                </option>
+                <option>
+                  Design
+                </option>
+                <option>
+                  Wellness
+                </option>
+              </select>
+            </label>
+            <label>
+              Budget
+              <select id="planBudget">
+                <option value="">
+                  Any
+                </option>
+                <option value="0">
+                  Free
+                </option>
+                <option value="500">
+                  Up to ₹500
+                </option>
+                <option value="1000">
+                  Up to ₹1,000
+                </option>
+                <option value="1500">
+                  Up to ₹1,500
+                </option>
+              </select>
+            </label>
+          </div>
+          <div id="planResults" class="cards">
+          </div>
+        </section>
+        <aside class="box">
+          <h2>
+            Your weekend plan
+          </h2>
+          <label>
+            Plan name
+            <input id="planName" placeholder="Saturday with friends">
+          </label>
+          <label>
+            Friends
+            <input id="planFriends" placeholder="Names separated by commas">
+          </label>
+          <div id="planItems">
+          </div>
+          <p class="title-row">
+            <b>Estimated per person</b><b id="planTotal">₹0</b>
+          </p>
+          <button id="sharePlan" class="button full">Share plan</button><button id="clearPlan" class="button outline full">Clear plan</button><small>Your plan and votes are saved to your browser and account.</small>
+        </aside>
+      </div>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checkout — Vibrant</title>
+    <link rel="stylesheet" href="style.css?v=20261006-checkout-ui">
+  </head>
+  <body data-page="checkout">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container checkout-page">
+      <div class="checkout-heading">
+        <a class="checkout-back" href="events.html" aria-label="Back to events">← Back to events</a>
+        <p class="checkout-eyebrow">SECURE YOUR PLACE</p>
+        <h1>Complete your booking</h1>
+        <p class="checkout-subtitle">Add your attendee details and review your order before confirming.</p>
+      </div>
+      <ol class="checkout-steps" aria-label="Checkout progress">
+        <li class="complete"><span>1</span><b>Your tickets</b></li>
+        <li class="active" aria-current="step"><span>2</span><b>Attendee details</b></li>
+        <li><span>3</span><b>Confirmation</b></li>
+      </ol>
+      <form id="checkout" class="checkout-form">
+        <section class="box checkout-fields" aria-labelledby="attendee-heading">
+          <div class="checkout-section-heading">
+            <span class="checkout-icon" aria-hidden="true">01</span>
+            <div>
+              <h2 id="attendee-heading">Attendee details</h2>
+              <p>Who should we register for this event?</p>
+            </div>
+          </div>
+          <label>
+            Full name
+            <input required name="name" autocomplete="name" placeholder="e.g. Aanya Sharma">
+          </label>
+          <label>
+            Email address
+            <input required type="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <small>Your booking confirmation will be sent here.</small>
+          </label>
+          <label>
+            Phone number
+            <input required type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="Your contact number">
+          </label>
+          <label>
+            Payment method
+            <select name="paymentMethod">
+              <option>UPI</option>
+              <option>Credit or debit card</option>
+              <option>Net banking</option>
+            </select>
+          </label>
+          <p class="checkout-privacy">Your details are used only to manage this event booking.</p>
+        </section>
+        <aside class="checkout-summary">
+          <div class="box checkout-order">
+            <div class="checkout-section-heading">
+              <span class="checkout-icon" aria-hidden="true">02</span>
+              <div>
+                <h2>Order summary</h2>
+                <p>Review your ticket selection.</p>
+              </div>
+            </div>
+            <div id="summary" class="checkout-order-details"></div>
+            <button class="button full checkout-submit">Confirm booking</button>
+            <p class="checkout-demo"><span aria-hidden="true">•</span> Demo checkout only. No payment will be collected.</p>
+          </div>
+          <p class="checkout-help">Need help? <a href="events.html">Return to events</a></p>
+        </aside>
+      </form>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>

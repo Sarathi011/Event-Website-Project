@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create an event — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="create">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container narrow">
+      <h1 id="eventFormTitle">
+        Create an event
+      </h1>
+      <p id="eventFormDescription">
+        Share your event with the Vibrant community.
+      </p>
+      <form id="create" class="box">
+        <label>
+          Event name
+          <input required name="title" maxlength="120">
+        </label>
+        <label>
+          Category
+          <input required name="category" list="eventCategories" placeholder="Choose a category or type a new one" maxlength="40">
+          <datalist id="eventCategories">
+            <option value="Technology">
+              <option value="Music">
+                <option value="Business">
+                  <option value="Design">
+                    <option value="Wellness">
+                      <option value="Food">
+                        <option value="Sports">
+                          <option value="Education">
+                            <option value="Travel">
+                              <option value="Arts & Culture">
+                              </datalist>
+                            </label>
+                            <label>
+                              Event image (optional)
+                              <input id="eventImage" name="eventImage" type="file" accept="image/jpeg,image/png,image/webp,image/gif">
+                              <small>Upload JPG, PNG, WEBP, or GIF. Maximum file size: 5 MB. A category image is used if you skip this.</small>
+                            </label>
+                            <div id="eventImagePreview" class="event-image-preview" hidden>
+                            </div>
+                            <label>
+                              Location
+                              <input required name="location" placeholder="City or Online" maxlength="100">
+                            </label>
+                            <div class="two">
+                              <label>
+                                Date
+                                <input required type="date" name="date">
+                              </label>
+                              <label>
+                                Time
+                                <input required type="time" name="time">
+                              </label>
+                            </div>
+                            <div class="two">
+                              <label>
+                                Ticket price (₹)
+                                <input type="number" min="0" value="499" name="price">
+                              </label>
+                              <label>
+                                Ticket capacity
+                                <input type="number" min="1" value="100" name="capacity">
+                              </label>
+                            </div>
+                            <label>
+                              Description
+                              <textarea required name="description" maxlength="3000">
+                              </textarea>
+                            </label>
+                            <div style="display:flex;gap:10px;align-items:center">
+                              <button id="eventSubmit" class="button">Publish event</button><a id="eventCancel" class="button outline" href="organizer.html" hidden>Cancel</a>
+                            </div>
+                          </form>
+                        </main>
+                        <script src="app.js">
+                        </script>
+                        <script src="backend.js?v=20261005-role-nav2">
+                        </script>
+                      </body>
+                    </html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Events — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="events">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container">
+      <div class="title-row">
+        <div>
+          <h1>
+            Discover events
+          </h1>
+          <p>
+            Find your next experience
+          </p>
+        </div>
+        <select id="sort">
+          <option value="soon">
+            Coming soon
+          </option>
+          <option value="price">
+            Price: low to high
+          </option>
+        </select>
+      </div>
+      <div class="filters">
+        <button class="selected" data-category="">All events</button><button data-category="Technology">Technology</button><button data-category="Music">Music</button><button data-category="Business">Business</button><button data-category="Design">Design</button><button data-category="Wellness">Wellness</button>
+      </div>
+      <div id="events" class="cards">
+      </div>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>

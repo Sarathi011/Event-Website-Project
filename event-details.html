@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Event details — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="detail">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container columns">
+      <article id="detail">
+      </article>
+      <aside class="box">
+        <h2>
+          Reserve your spot
+        </h2>
+        <div id="price" class="price">
+        </div>
+        <label>
+          Ticket type
+          <select id="ticketType">
+            <option value="general">
+              General admission
+            </option>
+            <option value="vip">
+              VIP — ₹1,499
+            </option>
+            <option value="student">
+              Student — ₹299
+            </option>
+          </select>
+        </label>
+        <label>
+          Tickets
+          <select id="qty">
+            <option>
+              1
+            </option>
+            <option>
+              2
+            </option>
+            <option>
+              3
+            </option>
+            <option>
+              4
+            </option>
+          </select>
+        </label>
+        <button id="book" class="button full">Continue to checkout</button>
+      </aside>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261006-review-fix-1">
+    </script>
+  </body>
+</html>

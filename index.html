@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vibrant Events</title>
+    <script>
+      if(!sessionStorage.getItem('vibrantUser'))location.replace('login.html');
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="home">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <small>DISCOVER SOMETHING NEW</small>
+        <h1>
+          Find events
+          <br>
+          that move you.
+        </h1>
+        <p>
+          Meet your people. Learn something new. Make memories.
+        </p>
+        <form id="homeSearch">
+          <input name="q" placeholder="Search events, topics or venues">
+          <select name="city">
+            <option value="">
+              All locations
+            </option>
+            <option>
+              Chennai
+            </option>
+            <option>
+              Bengaluru
+            </option>
+            <option>
+              Mumbai
+            </option>
+            <option>
+              Online
+            </option>
+          </select>
+          <button class="button">Search events</button>
+        </form>
+      </section>
+      <div class="title-row">
+        <div>
+          <h2>
+            Explore events
+          </h2>
+          <p>
+            Experiences happening soon
+          </p>
+        </div>
+        <a href="events.html">See all →</a>
+      </div>
+      <div class="filters">
+        <button class="selected" data-category="">All events</button><button data-category="Technology">Technology</button><button data-category="Music">Music</button><button data-category="Business">Business</button><button data-category="Design">Design</button><button data-category="Wellness">Wellness</button>
+      </div>
+      <div id="events" class="cards">
+      </div>
+      <section class="promo">
+        <div>
+          <small>FOR EVENT ORGANIZERS</small>
+          <h2>
+            Make your next event unforgettable.
+          </h2>
+        </div>
+        <a class="button" href="create-event.html">Create an event</a>
+      </section>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>

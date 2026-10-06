@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Create an account — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="register">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a><a class="button outline" href="events.html">Explore events</a>
+    </header>
+    <main class="container narrow">
+      <form class="box" id="register">
+        <h1>
+          Create an account
+        </h1>
+        <p>
+          Create an Organizer or Attendee account for the same Vibrant Events website.
+        </p>
+        <label>
+          Full name
+          <input required name="name">
+        </label>
+        <label>
+          Email
+          <input required type="email" name="email">
+        </label>
+        <label>
+          Password
+          <input required type="password" name="password" minlength="8">
+        </label>
+        <label>
+          Account type
+          <select required name="role">
+            <option value="attendee" selected>Attendee — discover and book events</option>
+            <option value="organizer">Organizer — publish and manage events</option>
+          </select>
+        </label>
+        <button class="button full">Create account</button>
+        <p>
+          Already have an account? <a class="text-button" href="login.html">Sign in</a>
+        </p>
+        <small>You can choose one account type for each email address.</small>
+      </form>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>

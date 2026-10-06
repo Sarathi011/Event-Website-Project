@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Organizer dashboard — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="organizer">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container">
+      <div class="title-row">
+        <div>
+          <h1>
+            Organizer dashboard
+          </h1>
+          <p>
+            Manage events and view your bookings.
+          </p>
+        </div>
+        <a class="button" href="create-event.html">＋ Create event</a>
+      </div>
+      <div class="tabs">
+        <button class="selected" data-tab="overview">Overview</button><button data-tab="events">My events</button><button data-tab="attendees">Attendees</button><button data-tab="analytics">Analytics</button><button id="refreshDashboard" class="outline" type="button">↻ Refresh data</button>
+      </div>
+      <div id="dashboard">
+      </div>
+    </main>
+    <script src="app.js">
+    </script>
+        <script src="backend.js?v=20261006-myevents-listing-actions">
+    </script>
+  </body>
+</html>

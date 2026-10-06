@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI Event Finder — Vibrant</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="ai">
+    <header>
+      <a class="logo" href="index.html">✳ Vibrant<span>.</span></a>
+      <nav>
+        <a href="events.html">Events</a><a href="ai-assistant.html">AI picks</a><a href="plan-together.html">Plan together</a><a href="bookings.html">My bookings</a><a href="organizer.html">Organizer</a>
+      </nav>
+      <a class="button outline" href="login.html">Sign in</a>
+    </header>
+    <main class="container narrow">
+      <section class="hero">
+        <small>PERSONAL EVENT FINDER</small>
+        <h1>
+          Find an event
+          <br>
+          that feels like you.
+        </h1>
+        <p>
+          Share your interests, city, and budget to see matching events.
+        </p>
+      </section>
+      <form id="aiForm" class="box">
+        <label>
+          What are you looking for?
+          <textarea name="prompt" required placeholder="Example: live music in Bengaluru under ₹1000">
+          </textarea>
+        </label>
+        <div class="two">
+          <label>
+            Location
+            <select name="city">
+              <option value="">
+                Anywhere
+              </option>
+              <option>
+                Chennai
+              </option>
+              <option>
+                Bengaluru
+              </option>
+              <option>
+                Mumbai
+              </option>
+              <option>
+                Online
+              </option>
+            </select>
+          </label>
+          <label>
+            Max budget
+            <select name="budget">
+              <option value="">
+                Any price
+              </option>
+              <option value="0">
+                Free
+              </option>
+              <option value="500">
+                ₹500
+              </option>
+              <option value="1000">
+                ₹1,000
+              </option>
+              <option value="1500">
+                ₹1,500
+              </option>
+            </select>
+          </label>
+        </div>
+        <button class="button">Find my events</button><small>Frontend demo matching. Live AI requires a backend connection.</small>
+      </form>
+      <section id="aiResults">
+      </section>
+    </main>
+    <script src="app.js">
+    </script>
+    <script src="backend.js?v=20261005-role-nav2">
+    </script>
+  </body>
+</html>
